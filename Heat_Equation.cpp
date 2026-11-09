@@ -138,7 +138,7 @@ int length;
 T* vec;
 };
 
-// This is outside the function not 100% sure about this
+
 template<typename S, typename T>
 auto operator*(const S& scalar,const Vector<T>& other) 
 ->Vector<typename std::common_type<S, T>::type>{
@@ -173,7 +173,7 @@ public:
    Matrix(const int& row, const int& col)
     :m(row),n(col){}
 
-// Not sure what the destructor has to be
+
    ~Matrix() = default;
 
 
