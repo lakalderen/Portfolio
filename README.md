@@ -26,3 +26,7 @@ This is implemented in C++ using class templates and consists of the following c
 - The matrix class stores the coefficients of the discretized heat equation using a sparse representation. It allows accessing and inserting matrix elements, as well as matrix vector multiplication.
 - A function that implements the Conjugate Gradient method to solve the linear system at each time step.
 - The Heat class takes the thermal diffusivity, number of mesh points, the time step size. It constructs the matrix and computes the numerical solution at a given time. 
+
+## PCA Ising Model
+
+## Supervised Learning
