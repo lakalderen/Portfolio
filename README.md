@@ -73,11 +73,7 @@ The CNN performed worse than the other models, suggesting that this architecture
 
 The project investigated how input parameter selection and neural network architecture affect the prediction of asteroid orbital parameters.
 
-The models showed small improvements as different input combinations and architectures were tested. An interesting observation was that eccentricity and perihelion distance did not individually perform as well as expected, despite their relationship with the semi-major axis through the equation:
-
-\[
-q = a(1-e)
-\]
+The models showed small improvements as different input combinations and architectures were tested. An interesting observation was that eccentricity and perihelion distance did not individually perform as well as expected, despite their relationship with the semi-major axis through the equation: $$q = a(1-e)$$
 
 where \(q\) is the perihelion distance, \(a\) is the semi-major axis, and \(e\) is the eccentricity.
 
