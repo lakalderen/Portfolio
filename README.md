@@ -34,5 +34,51 @@ This project was completed as part of the course AI for Physicists.
 The goal was to use Principal Component Analysis (PCA) to analyze spin configurations of the Ising model. The data consisted of 2D lattices with 900 spins each, at different temperatures. The code standardizes the data, finds the eigenvalues and eigenvectors of the covariance matrix, and projects the data onto the eigenvectors with the largest corresponding eigenvalues (principal components). The plot shows that higher temperatures correspond to lower absolute magnetization, as the spins become more disordered.
 
 ## Python Supervised Learning
+### Supervised Learning Asteroid Orbital Parameters
 
+This project was completed as part of the course AI for Physicists. The assignment was to train 4 different models and compare their performances. 
+
+The goal was to use supervised learning to predict the semi major axis of an asteroid's orbit from its orbital and physical parameters. The project uses neural networks implemented in Python with PyTorch.
+
+The dataset was cleaned by removing missing values and outliers. The data was then divided into training and testing sets and standardized before training. The models were evaluated using mean squared error (MSE) and the coefficient of determination (R²).
+
+### Model 1: Individual Input Parameters
+
+The first model uses a neural network with one hidden layer containing 32 neurons and a ReLU activation function.
+
+Eight different input parameters were tested individually to investigate which had the strongest predictive relationship with the semi major axis. These included inclination, eccentricity, perihelion distance, minimum orbit intersection distance with Earth, diameter, albedo, epoch, and time of perihelion passage.
+
+The results were compared using the test loss and R² score. The minimum orbit intersection distance with Earth gave the best results for this model.
+
+### Model 2 – Multiple Input Parameters
+
+The second model uses the same neural network architecture but combines different input parameters rather than testing them individually.
+
+Based on the results from Model 1, perihelion distance, minimum orbit intersection distance with Earth, and asteroid diameter were selected for further investigation. Different combinations of two and three parameters were tested to determine whether using multiple inputs improved the predictions.
+
+The results showed that the three input combination performed slightly better than the best two input combination. However, the difference was small, so the combination of diameter and minimum orbit intersection distance was selected for further investigation.
+
+### Model 3 – Network Architecture
+
+The third model investigates whether increasing the number of hidden layers improves the predictions.
+
+Using the two selected input parameters from Model 2, a neural network with two hidden layers was compared with the previous network containing one hidden layer.
+
+### Model 4 – Convolutional Neural Network
+
+A one dimensional convolutional neural network (CNN) was also tested to compare its performance with the fully connected neural networks.
+
+The CNN performed worse than the other models, suggesting that this architecture was less suitable for the selected input data.
+
+### Discussion
+
+The project investigated how input parameter selection and neural network architecture affect the prediction of asteroid orbital parameters.
+
+The models showed small improvements as different input combinations and architectures were tested. An interesting observation was that eccentricity and perihelion distance did not individually perform as well as expected, despite their relationship with the semi-major axis through the equation:
+
+\[
+q = a(1-e)
+\]
+
+where \(q\) is the perihelion distance, \(a\) is the semi-major axis, and \(e\) is the eccentricity.
 
