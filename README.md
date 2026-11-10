@@ -28,13 +28,12 @@ This is implemented in C++ using class templates and consists of the following c
 - The Heat class takes the thermal diffusivity, number of mesh points, the time step size. It constructs the matrix and computes the numerical solution at a given time. 
 
 
-## Python PCA Ising Model
+## Python PCA: Ising Model
 This project was completed as part of the course AI for Physicists.
 
 The goal was to use Principal Component Analysis (PCA) to analyze spin configurations of the Ising model. The data consisted of 2D lattices with 900 spins each, at different temperatures. The code standardizes the data, finds the eigenvalues and eigenvectors of the covariance matrix, and projects the data onto the eigenvectors with the largest corresponding eigenvalues (principal components). The plot shows that higher temperatures correspond to lower absolute magnetization, as the spins become more disordered.
 
-## Python Supervised Learning
-### Supervised Learning Asteroid Orbital Parameters
+## Python Supervised Learning: Asteroid Orbital Parameters
 
 This project was completed as part of the course AI for Physicists. The assignment was to train 4 different models and compare their performances. 
 
